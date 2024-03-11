@@ -15,4 +15,4 @@ For managing installed packages with [brew](https://brew.sh).
 
 See the [Homebrew Bundle repo](https://github.com/Homebrew/homebrew-bundle) for more details.
 
-
+See also [Brew Bundle Brewfile Tips](https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f).
