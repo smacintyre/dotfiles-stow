@@ -14,7 +14,6 @@ plug "wintermi/zsh-starship"
 plug "zap-zsh/exa"
 
 plug "Aloxaf/fzf-tab"
-zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
