@@ -60,3 +60,21 @@ alias vi="nvim"
 alias cat="bat"
 
 stty -ixon
+
+function auth_wrkr () {
+  if [ -z "$GITLAB_ACCESS_TOKEN" ]; then
+    echo authorizing wrkr - gitlab
+    op signin --account complypath.1password.com
+    export GITLAB_ACCESS_TOKEN=$(op item get GITLAB_ACCESS_TOKEN --account complypath.1password.com --fields notesPlain)
+    export TF_TOKEN_gitlab_com=$GITLAB_ACCESS_TOKEN
+  fi
+
+  echo authorizing wrkr - aws nwo
+  aws-sso-util login https://wrkr.awsapps.com/start ap-southeast-2
+  export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.AWSAdministratorAccess
+}
+
+function start_wrkr () {
+  auth_wrkr
+  tmuxinator start wrkr
+}
