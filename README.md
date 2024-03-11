@@ -45,11 +45,17 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
-finally install dependencies with Brew
+Install dependencies with Brew
 
 ```
 $ cd $HOME
 $ brew bundle
+```
+
+Post install setup:
+
+```
+$ $(brew --prefix)/opt/fzf/install
 ```
 
 ## Features

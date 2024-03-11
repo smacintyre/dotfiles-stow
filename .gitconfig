@@ -1,0 +1,50 @@
+[user]
+	name = Shawn MacIntyre
+	email = shawn@selfstructured.com
+	# signingkey = 0152E321
+[commit]
+	gpgsign = false
+	# gpgsign = true
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nvim
+	autocrlf = input
+	safecrlf = true
+[merge]
+	tool = nvim -d
+[alias]
+	c = commit
+	s = status
+	st = status
+	last = log -1 HEAD
+	sl = stash list
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset %C(magenta)%G?%Creset =>%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+	default = simple
+[pull]
+	rebase = true
+[help]
+	autocorrect = 1
+[github]
+	user = smacintyre
+[credential]
+	### For Ratchet and Github
+	### Run: git config --local credential.helper osxkeychain
+	# helper = osxkeychain
+
+	### For Selfstructured
+	### Run: git config --local credential.helper '!aws2 --profile [AWS_PROFILE] codecommit credential-helper $@'
+	### Run: git config --local credential.UseHttpPath true
+	# helper = !aws2 --profile devops-cert codecommit credential-helper $@
+	# UseHttpPath = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
