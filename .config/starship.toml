@@ -1,0 +1,15 @@
+# ~/.config/starship.toml
+
+
+[time]
+disabled = false
+style = "bold dimmed cyan"
+time_format = "📅 %F 🕙 %T"
+format = "[$time]($style) "
+
+[aws]
+style = "bold dimmed yellow"
+
+[kubernetes]
+disabled = false
+style = "fg:219 bold"
