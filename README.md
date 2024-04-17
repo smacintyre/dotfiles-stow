@@ -58,6 +58,13 @@ Post install setup:
 $ $(brew --prefix)/opt/fzf/install
 ```
 
+## Adding new files
+
+1. Copy the file into the `~/dotfiles` directory matching the same pattern
+   from `~`
+2. Change to dotfiles: `cd ~/dotfiles`
+3. Run: `stow --adopt .`
+
 ## Features
 
 ### Brew Bundle

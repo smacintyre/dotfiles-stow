@@ -43,45 +43,25 @@ windows:
   - db:
       root: ~/Projects/wrkr/aurora/
       panes:
-        - export AWS_PROFILE=wrkr.infrastructure-shared-sandbox.AWSAdministratorAccess
-        - export AWS_PROFILE=wrkr.infrastructure-shared-sandbox.AWSAdministratorAccess
-  - misc:
-      root: ~/Projects/wrkr/
-      panes:
-        - 
-        - 
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
   - flux:
       root: ~/Projects/wrkr/flux-config/
       panes:
-        - export AWS_PROFILE=wrkr.infrastructure-shared-sandbox.AWSAdministratorAccess
-        - export AWS_PROFILE=wrkr.infrastructure-shared-sandbox.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
   - shell:
       root: ~/Projects/wrkr/mfe/shell/
       panes:
-        -
-        -
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
   - user-m:
       root: ~/Projects/wrkr/user-management-client/
       panes:
-        -
-        -
-  - org-on:
-      root: ~/Projects/wrkr/organisation-onboarding-client/
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+  - mfes:
+      root: ~/Projects/wrkr/
       panes:
-        -
-        -
-  - contrib:
-      root: ~/Projects/wrkr/wrkr-contributions-client/
-      panes:
-        -
-        -
-  - stp:
-      root: ~/Projects/wrkr/single-touch-payroll-client/
-      panes:
-        -
-        -
-  - samples:
-      root: ~/Projects/wrkr/mfe/
-      panes:
-        -
-        -
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+        - export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
