@@ -4365,6 +4365,50 @@
             }
           }
         }
+      },
+      "stern": {
+        "version": "1.29.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:810ed3bd079fd42cfacab17330fe2d707decc3917836248d5f4b7a9419c20a38",
+              "sha256": "810ed3bd079fd42cfacab17330fe2d707decc3917836248d5f4b7a9419c20a38"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:e0f7484937e4bca9c64007e913074938c4b753110cf9bca621e0e45142303cdd",
+              "sha256": "e0f7484937e4bca9c64007e913074938c4b753110cf9bca621e0e45142303cdd"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:aff036b4aecb96fecf1581aeeeb800d041558576dad2440a98cbc20b7bd1a671",
+              "sha256": "aff036b4aecb96fecf1581aeeeb800d041558576dad2440a98cbc20b7bd1a671"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:5956704eb7eb984a84b30605d5aead0adfc2c5b4d0c083590c3690ac94ee4b12",
+              "sha256": "5956704eb7eb984a84b30605d5aead0adfc2c5b4d0c083590c3690ac94ee4b12"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:225484988678fa554198ad46727ec5e7e612525f471a2e99df1bb741e582e65b",
+              "sha256": "225484988678fa554198ad46727ec5e7e612525f471a2e99df1bb741e582e65b"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:870a7e68774aa1f14354c69e5340093063cbcff85467f047d507a7ec9b987b71",
+              "sha256": "870a7e68774aa1f14354c69e5340093063cbcff85467f047d507a7ec9b987b71"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/stern/blobs/sha256:04e826ce0c23065b862323444bd5d64d6cf847c0014fed4d6e7170ef55ab1fa4",
+              "sha256": "04e826ce0c23065b862323444bd5d64d6cf847c0014fed4d6e7170ef55ab1fa4"
+            }
+          }
+        }
       }
     },
     "cask": {
