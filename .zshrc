@@ -79,3 +79,11 @@ function start_wrkr () {
   auth_wrkr
   tmuxinator start wrkr
 }
+
+# pnpm
+export PNPM_HOME="/Users/smacintyre/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
