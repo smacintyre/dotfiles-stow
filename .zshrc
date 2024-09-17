@@ -58,6 +58,7 @@ eval "$(jenv init -)"
 alias awsd="source _awsd"
 alias vi="nvim"
 alias cat="bat"
+alias ls='eza --hyperlink --group-directories-first --icons'
 
 stty -ixon
 
