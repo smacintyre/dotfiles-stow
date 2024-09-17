@@ -95,6 +95,10 @@ brew "typescript-language-server"
 brew "vscode-langservers-extracted"
 brew "watch"
 brew "wget"
+# brew edit w3m
+# Change --disable-image to --enable-image and save. Then:
+# brew reinstall --build-from-source w3m
+brew "w3m", args: ["--build-from-source"]
 brew "yaml-language-server"
 brew "yamlfmt"
 brew "yarn"
