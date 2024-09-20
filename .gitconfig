@@ -12,10 +12,11 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nvim
+	pager = delta
 	autocrlf = input
 	safecrlf = true
 [merge]
-	tool = nvim -d
+	conflictstyle = diff3
 [alias]
 	c = commit
 	s = status
@@ -48,3 +49,8 @@
 	required = true
 [init]
 	defaultBranch = main
+[delta]
+	navigate = true
+	side-by-side = true
+[diff]
+	colorMoved = default
