@@ -17,7 +17,7 @@
         "revision": "0ed20f35d21ebc3f4f829689b101078718ad5ce1"
       },
       "homebrew/services": {
-        "revision": "4899efb7c0f38a5bd8d2fac8a7af4df8ab11fa23"
+        "revision": "9b2f2b8966002e1f05c0704f71f9749ca9b1d731"
       },
       "iann0036/iamlive": {
         "revision": "fb58d0bb6818a2475ec959dc3f0ea8775fb96aae"
@@ -5199,6 +5199,14 @@
         "CLT": "15.3.0.0.1.1708646388",
         "Xcode": "16.0",
         "macOS": "14.6.1"
+      },
+      "sequoia": {
+        "HOMEBREW_VERSION": "4.4.1-66-g35ebf4a",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "16.0.0.0.1.1724870825",
+        "Xcode": "16.0",
+        "macOS": "15.0.1"
       }
     }
   }
