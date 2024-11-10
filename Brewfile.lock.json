@@ -5171,12 +5171,12 @@
         "macOS": "14.6.1"
       },
       "sequoia": {
-        "HOMEBREW_VERSION": "4.4.4-3-g22b9541",
+        "HOMEBREW_VERSION": "4.4.4-74-g5fd34f4",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
-        "CLT": "16.0.0.0.1.1724870825",
+        "CLT": "16.1.0.0.1.1729049160",
         "Xcode": "16.1",
-        "macOS": "15.0.1"
+        "macOS": "15.1"
       }
     }
   }
