@@ -72,7 +72,9 @@ function auth_wrkr () {
 
   echo authorizing wrkr - aws nwo
   aws-sso-util login https://wrkr.awsapps.com/start ap-southeast-2
-  export AWS_PROFILE=wrkr.sandbox-shawn-macintyre.ap-southeast-2.AWSAdministratorAccess
+  if [ -z "$AWS_PROFILE" ]; then
+    export AWS_PROFILE=wrkr.infrastructure-shared-sandbox.ap-southeast-2.AWSAdministratorAccess
+  fi
   export TFENV_TERRAFORM_VERSION=1.5.7
 }
 
