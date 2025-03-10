@@ -1,0 +1,5 @@
+[user]
+	email = shawn.macintyre@wrkr.com.au
+	signingkey = F1F712CC2E9F55B8
+[commit]
+	gpgsign = true
