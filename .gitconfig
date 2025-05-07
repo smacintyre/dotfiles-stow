@@ -1,10 +1,8 @@
 [user]
 	name = Shawn MacIntyre
 	email = shawn@selfstructured.com
-	# signingkey = 0152E321
 [commit]
 	gpgsign = false
-	# gpgsign = true
 [ui "color"]
 	ui = always
 [color]
@@ -12,7 +10,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nvim
-	pager = delta
 	autocrlf = input
 	safecrlf = true
 [merge]
@@ -24,6 +21,10 @@
 	last = log -1 HEAD
 	sl = stash list
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset %C(magenta)%G?%Creset =>%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	# `git log` with patches shown with difftastic.
+	l = -c diff.external=difft log -p --ext-diff
+	# Show the most recent commit with difftastic.
+	ds = -c diff.external=difft show --ext-diff
 [push]
 	default = simple
 [pull]
@@ -32,16 +33,6 @@
 	autocorrect = 1
 [github]
 	user = smacintyre
-[credential]
-	### For Ratchet and Github
-	### Run: git config --local credential.helper osxkeychain
-	# helper = osxkeychain
-
-	### For Selfstructured
-	### Run: git config --local credential.helper '!aws2 --profile [AWS_PROFILE] codecommit credential-helper $@'
-	### Run: git config --local credential.UseHttpPath true
-	# helper = !aws2 --profile devops-cert codecommit credential-helper $@
-	# UseHttpPath = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -49,11 +40,8 @@
 	required = true
 [init]
 	defaultBranch = main
-[delta]
-	navigate = true
-	side-by-side = true
 [diff]
-	colorMoved = default
+	external = difft
 
 # The contents of this file are included only for GitLab.com URLs
 [includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
