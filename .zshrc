@@ -7,7 +7,6 @@ plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zsh-users/zsh-history-substring-search"
 plug "zap-zsh/vim"
-plug "zap-zsh/nvm"
 plug "chrishrb/zsh-kubectl"
 plug "wintermi/zsh-rust"
 plug "wintermi/zsh-starship"
@@ -105,3 +104,9 @@ eval "$(ssh-agent -s)"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/Users/smacintyre/.opam/opam-init/init.zsh' ]] || source '/Users/smacintyre/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+#
+
+plug "zap-zsh/nvm"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
