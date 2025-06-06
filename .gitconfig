@@ -43,8 +43,9 @@
 [diff]
 	external = difft
 
-# The contents of this file are included only for GitLab.com URLs
+# Provider specific includes
 [includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
+  path = ~/.gitconfig-gitlab
 
-# Edit this line to point to your alternative configuration file
-path = ~/.gitconfig-gitlab
+[includeIf "hasconfig:remote.*.url:https://git.sr.ht/**"]
+  path = ~/.gitconfig-sourcehut
